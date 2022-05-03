@@ -1,0 +1,334 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ActionConfirmation	src/ActionConfirmation.php	/^final class ActionConfirmation$/;"	c
+ActionProhibitedException	src/Exception/ActionProhibitedException.php	/^final class ActionProhibitedException extends SlackApiException$/;"	c
+Attachment	src/Attachment.php	/^final class Attachment$/;"	c
+AttachmentAction	src/AttachmentAction.php	/^final class AttachmentAction$/;"	c
+AttachmentField	src/AttachmentField.php	/^final class AttachmentField$/;"	c
+AttachmentUnitTest	tests/AttachmentUnitTest.php	/^class AttachmentUnitTest extends PHPUnit\\Framework\\TestCase$/;"	c
+ChannelIsArchivedException	src/Exception/ChannelIsArchivedException.php	/^final class ChannelIsArchivedException extends SlackApiException$/;"	c
+ChannelNotFoundException	src/Exception/ChannelNotFoundException.php	/^final class ChannelNotFoundException extends SlackApiException$/;"	c
+Client	src/Client.php	/^final class Client implements ClientInterface$/;"	c
+ClientFunctionalTest	tests/ClientFunctionalTest.php	/^class ClientFunctionalTest extends PHPUnit\\Framework\\TestCase$/;"	c
+ClientInterface	src/ClientInterface.php	/^interface ClientInterface$/;"	i
+ClientUnitTest	tests/ClientUnitTest.php	/^class ClientUnitTest extends PHPUnit\\Framework\\TestCase$/;"	c
+ErrorResponseHandler	src/ErrorResponseHandler.php	/^class ErrorResponseHandler$/;"	c
+ErrorResponseHandlerUnitTest	tests/ErrorResponseHandlerUnitTest.php	/^class ErrorResponseHandlerUnitTest extends PHPUnit\\Framework\\TestCase$/;"	c
+InvalidPayloadException	src/Exception/InvalidPayloadException.php	/^final class InvalidPayloadException extends SlackApiException$/;"	c
+Message	src/Message.php	/^final class Message implements MessageInterface$/;"	c
+MessageInterface	src/MessageInterface.php	/^interface MessageInterface$/;"	i
+MessageUnitTest	tests/MessageUnitTest.php	/^class MessageUnitTest extends PHPUnit\\Framework\\TestCase$/;"	c
+RollupErrorException	src/Exception/RollupErrorException.php	/^final class RollupErrorException extends SlackApiException$/;"	c
+SlackApiException	src/Exception/SlackApiException.php	/^abstract class SlackApiException extends \\Exception$/;"	c
+UserNotFoundException	src/Exception/UserNotFoundException.php	/^final class UserNotFoundException extends SlackApiException$/;"	c
+__call	src/Client.php	/^    public function __call(string $name, array $arguments): MessageInterface$/;"	f
+__construct	src/ActionConfirmation.php	/^    public function __construct(string $title, string $text)$/;"	f
+__construct	src/AttachmentAction.php	/^    public function __construct(string $name, string $text)$/;"	f
+__construct	src/AttachmentField.php	/^    public function __construct(string $title, string $value, bool $short = false)$/;"	f
+__construct	src/Client.php	/^    public function __construct($/;"	f
+__construct	src/Message.php	/^    public function __construct(ClientInterface $client)$/;"	f
+a	tests/AttachmentUnitTest.php	/^        $a = (new Attachment())$/;"	v
+actions	src/Attachment.php	/^        $actions = [];$/;"	v
+actions	src/Attachment.php	/^        $this->actions = [];$/;"	v
+actions	src/Attachment.php	/^    private $actions = [];$/;"	v
+actions	tests/AttachmentUnitTest.php	/^        $actions = $a->getActions();$/;"	v
+addAction	src/Attachment.php	/^    public function addAction(AttachmentAction $action): self$/;"	f
+addField	src/Attachment.php	/^    public function addField(AttachmentField $field): self$/;"	f
+allowMarkdown	src/Message.php	/^        $this->allowMarkdown = $value;$/;"	v
+allowMarkdown	src/Message.php	/^    private $allowMarkdown = true;$/;"	v
+array	src/AttachmentAction.php	/^        $array = [$/;"	v
+attach	src/Message.php	/^    public function attach(Attachment $attachment): MessageInterface$/;"	f
+attach	src/MessageInterface.php	/^    public function attach(Attachment $attachment): self;$/;"	f
+attachment	tests/ClientFunctionalTest.php	/^        $attachment = (new Attachment())$/;"	v
+attachmentOutput	tests/ClientFunctionalTest.php	/^        $attachmentOutput = [$/;"	v
+attachments	src/Client.php	/^        $attachments = [];$/;"	v
+attachments	src/Message.php	/^        $this->attachments = [];$/;"	v
+attachments	src/Message.php	/^    private $attachments = [];$/;"	v
+attachments	tests/MessageUnitTest.php	/^        $attachments = $message->getAttachments();$/;"	v
+authorIcon	src/Attachment.php	/^        $this->authorIcon = $authorIcon;$/;"	v
+authorIcon	src/Attachment.php	/^    private $authorIcon;$/;"	v
+authorLink	src/Attachment.php	/^        $this->authorLink = $authorLink;$/;"	v
+authorLink	src/Attachment.php	/^    private $authorLink;$/;"	v
+authorName	src/Attachment.php	/^        $this->authorName = $authorName;$/;"	v
+authorName	src/Attachment.php	/^    private $authorName;$/;"	v
+body	src/ErrorResponseHandler.php	/^        $body = $response->getBody()->__toString();$/;"	v
+channel	src/Message.php	/^        $this->channel = $channel;$/;"	v
+channel	src/Message.php	/^    private $channel;$/;"	v
+clearActions	src/Attachment.php	/^    public function clearActions(): self$/;"	f
+clearAttachments	src/Message.php	/^    public function clearAttachments(): MessageInterface$/;"	f
+clearAttachments	src/MessageInterface.php	/^    public function clearAttachments(): self;$/;"	f
+clearFields	src/Attachment.php	/^    public function clearFields(): self$/;"	f
+client	src/Message.php	/^        $this->client = $client;$/;"	v
+client	src/Message.php	/^    private $client;$/;"	v
+client	tests/ClientFunctionalTest.php	/^        $client = new Client($/;"	v
+client	tests/ClientUnitTest.php	/^        $client = new Client($/;"	v
+code	src/ErrorResponseHandler.php	/^        $code = $response->getStatusCode();$/;"	v
+color	src/Attachment.php	/^        $this->color = $color;$/;"	v
+color	src/Attachment.php	/^    private $color = 'good';$/;"	v
+confirm	src/AttachmentAction.php	/^        $this->confirm = $confirm;$/;"	v
+confirm	src/AttachmentAction.php	/^    private $confirm;$/;"	v
+createMessage	src/Client.php	/^    public function createMessage(): MessageInterface$/;"	f
+createMessage	src/ClientInterface.php	/^    public function createMessage(): MessageInterface;$/;"	f
+data	src/Attachment.php	/^        $data = [$/;"	v
+defaults	tests/ClientUnitTest.php	/^        $defaults = [$/;"	v
+disableMarkdown	src/Message.php	/^    public function disableMarkdown(): MessageInterface$/;"	f
+disableMarkdown	src/MessageInterface.php	/^    public function disableMarkdown(): self;$/;"	f
+dismissText	src/ActionConfirmation.php	/^        $this->dismissText = $dismissText;$/;"	v
+dismissText	src/ActionConfirmation.php	/^    private $dismissText;$/;"	v
+enableMarkdown	src/Message.php	/^    public function enableMarkdown(): MessageInterface$/;"	f
+enableMarkdown	src/MessageInterface.php	/^    public function enableMarkdown(): self;$/;"	f
+encoded	src/Client.php	/^        $encoded = \\json_encode($payload, \\JSON_UNESCAPED_UNICODE);$/;"	v
+endpoint	src/Client.php	/^        $this->endpoint = $endpoint;$/;"	v
+endpoint	src/Client.php	/^    private $endpoint;$/;"	v
+errorResponseHandler	src/Client.php	/^        $this->errorResponseHandler = new ErrorResponseHandler();$/;"	v
+errorResponseHandler	src/Client.php	/^    private $errorResponseHandler;$/;"	v
+exceptionClass	src/ErrorResponseHandler.php	/^            $exceptionClass = self::ERROR_TO_EXCEPTION_MAPPING[$code][$phrase][$body];$/;"	v
+expectedHttpData	tests/ClientFunctionalTest.php	/^        $expectedHttpData = [$/;"	v
+f	tests/AttachmentUnitTest.php	/^        $f = new AttachmentField('Title 1', 'Value 1', true);$/;"	v
+fallback	src/Attachment.php	/^        $this->fallback = $fallback;$/;"	v
+fallback	src/Attachment.php	/^    private $fallback = ' ';$/;"	v
+fields	src/Attachment.php	/^        $fields = [];$/;"	v
+fields	src/Attachment.php	/^        $this->fields = [];$/;"	v
+fields	src/Attachment.php	/^    private $fields = [];$/;"	v
+fields	tests/AttachmentUnitTest.php	/^        $fields = $a->getFields();$/;"	v
+footer	src/Attachment.php	/^        $this->footer = $footer;$/;"	v
+footer	src/Attachment.php	/^    private $footer;$/;"	v
+footerIcon	src/Attachment.php	/^        $this->footerIcon = $footerIcon;$/;"	v
+footerIcon	src/Attachment.php	/^    private $footerIcon;$/;"	v
+from	src/Message.php	/^    public function from(string $username): MessageInterface$/;"	f
+from	src/MessageInterface.php	/^    public function from(string $username): self;$/;"	f
+getActions	src/Attachment.php	/^    public function getActions(): array$/;"	f
+getActionsAsArrays	src/Attachment.php	/^    private function getActionsAsArrays(): array$/;"	f
+getAllowMarkdown	src/Message.php	/^    public function getAllowMarkdown(): bool$/;"	f
+getAllowMarkdown	src/MessageInterface.php	/^    public function getAllowMarkdown(): bool;$/;"	f
+getAttachments	src/Message.php	/^    public function getAttachments(): array$/;"	f
+getAttachments	src/MessageInterface.php	/^    public function getAttachments(): array;$/;"	f
+getAttachmentsAsArrays	src/Client.php	/^    private function getAttachmentsAsArrays(MessageInterface $message): array$/;"	f
+getAuthorIcon	src/Attachment.php	/^    public function getAuthorIcon(): ?string$/;"	f
+getAuthorLink	src/Attachment.php	/^    public function getAuthorLink(): ?string$/;"	f
+getAuthorName	src/Attachment.php	/^    public function getAuthorName(): ?string$/;"	f
+getChannel	src/Message.php	/^    public function getChannel(): ?string$/;"	f
+getChannel	src/MessageInterface.php	/^    public function getChannel(): ?string;$/;"	f
+getColor	src/Attachment.php	/^    public function getColor(): ?string$/;"	f
+getConfirm	src/AttachmentAction.php	/^    public function getConfirm(): ?ActionConfirmation$/;"	f
+getDismissText	src/ActionConfirmation.php	/^    public function getDismissText(): ?string$/;"	f
+getFallback	src/Attachment.php	/^    public function getFallback(): string$/;"	f
+getFields	src/Attachment.php	/^    public function getFields(): array$/;"	f
+getFieldsAsArrays	src/Attachment.php	/^    private function getFieldsAsArrays(): array$/;"	f
+getFooter	src/Attachment.php	/^    public function getFooter(): ?string$/;"	f
+getFooterIcon	src/Attachment.php	/^    public function getFooterIcon(): ?string$/;"	f
+getIcon	src/Message.php	/^    public function getIcon(): ?string$/;"	f
+getIcon	src/MessageInterface.php	/^    public function getIcon(): ?string;$/;"	f
+getIconType	src/Message.php	/^    public function getIconType(): ?string$/;"	f
+getIconType	src/MessageInterface.php	/^    public function getIconType(): ?string;$/;"	f
+getImageUrl	src/Attachment.php	/^    public function getImageUrl(): ?string$/;"	f
+getMarkdownFields	src/Attachment.php	/^    public function getMarkdownFields(): array$/;"	f
+getMarkdownInAttachments	src/Message.php	/^    public function getMarkdownInAttachments(): array$/;"	f
+getMarkdownInAttachments	src/MessageInterface.php	/^    public function getMarkdownInAttachments(): array;$/;"	f
+getMessage	tests/MessageUnitTest.php	/^    protected function getMessage()$/;"	f
+getName	src/AttachmentAction.php	/^    public function getName(): string$/;"	f
+getOkText	src/ActionConfirmation.php	/^    public function getOkText(): ?string$/;"	f
+getOptions	src/Client.php	/^    public function getOptions(): array$/;"	f
+getPretext	src/Attachment.php	/^    public function getPretext(): ?string$/;"	f
+getResponseMock	tests/ErrorResponseHandlerUnitTest.php	/^    private function getResponseMock(int $code, string $phrase, string $body): ResponseInterface$/;"	f
+getStyle	src/AttachmentAction.php	/^    public function getStyle(): string$/;"	f
+getText	src/ActionConfirmation.php	/^    public function getText(): string$/;"	f
+getText	src/Attachment.php	/^    public function getText(): string$/;"	f
+getText	src/AttachmentAction.php	/^    public function getText(): string$/;"	f
+getText	src/Message.php	/^    public function getText(): ?string$/;"	f
+getText	src/MessageInterface.php	/^    public function getText(): ?string;$/;"	f
+getThumbUrl	src/Attachment.php	/^    public function getThumbUrl(): ?string$/;"	f
+getTimestamp	src/Attachment.php	/^    public function getTimestamp(): ?\\DateTime$/;"	f
+getTitle	src/ActionConfirmation.php	/^    public function getTitle(): string$/;"	f
+getTitle	src/Attachment.php	/^    public function getTitle(): ?string$/;"	f
+getTitle	src/AttachmentField.php	/^    public function getTitle(): string$/;"	f
+getTitleLink	src/Attachment.php	/^    public function getTitleLink(): ?string$/;"	f
+getType	src/AttachmentAction.php	/^    public function getType(): string$/;"	f
+getUrl	src/AttachmentAction.php	/^    public function getUrl(): ?string$/;"	f
+getUsername	src/Message.php	/^    public function getUsername(): ?string$/;"	f
+getUsername	src/MessageInterface.php	/^    public function getUsername(): ?string;$/;"	f
+getValue	src/AttachmentAction.php	/^    public function getValue(): ?string$/;"	f
+getValue	src/AttachmentField.php	/^    public function getValue(): string$/;"	f
+handleResponse	src/ErrorResponseHandler.php	/^    public function handleResponse(ResponseInterface $response): void$/;"	f
+handler	tests/ErrorResponseHandlerUnitTest.php	/^        $handler = new ErrorResponseHandler();$/;"	v
+httpClient	src/Client.php	/^        $this->httpClient = $httpClient;$/;"	v
+httpClient	src/Client.php	/^    private $httpClient;$/;"	v
+icon	src/Message.php	/^            $this->icon = $this->iconType = null;$/;"	v
+icon	src/Message.php	/^        $this->icon = $icon;$/;"	v
+icon	src/Message.php	/^    private $icon;$/;"	v
+iconType	src/Message.php	/^            $this->iconType = self::ICON_TYPE_EMOJI;$/;"	v
+iconType	src/Message.php	/^            $this->iconType = self::ICON_TYPE_URL;$/;"	v
+iconType	src/Message.php	/^    private $iconType;$/;"	v
+imageUrl	src/Attachment.php	/^        $this->imageUrl = $imageUrl;$/;"	v
+imageUrl	src/Attachment.php	/^    private $imageUrl;$/;"	v
+isShort	src/AttachmentField.php	/^    public function isShort(): bool$/;"	f
+markdownFields	src/Attachment.php	/^        $this->markdownFields = $fields;$/;"	v
+markdownFields	src/Attachment.php	/^    private $markdownFields = [];$/;"	v
+markdownInAttachments	src/Message.php	/^        $this->markdownInAttachments = $fields;$/;"	v
+markdownInAttachments	src/Message.php	/^    private $markdownInAttachments = [];$/;"	v
+message	tests/ClientFunctionalTest.php	/^        $message = $client->createMessage()->setText('Message');$/;"	v
+message	tests/ClientFunctionalTest.php	/^        $message = $client->to('@regan')->from('Archer')->setText('Message');$/;"	v
+message	tests/ClientUnitTest.php	/^        $message = $client->createMessage();$/;"	v
+message	tests/ClientUnitTest.php	/^        $message = $client->to('@regan');$/;"	v
+message	tests/MessageUnitTest.php	/^        $message = $this->getMessage();$/;"	v
+mockHttpClient	tests/ClientFunctionalTest.php	/^        $this->mockHttpClient = new \\Http\\Mock\\Client();$/;"	v
+mockHttpClient	tests/ClientFunctionalTest.php	/^    private $mockHttpClient;$/;"	v
+name	src/AttachmentAction.php	/^        $this->name = $name;$/;"	v
+name	src/AttachmentAction.php	/^    private $name;$/;"	v
+now	tests/AttachmentUnitTest.php	/^        $now = new DateTime();$/;"	v
+now	tests/ClientFunctionalTest.php	/^        $now = new DateTime();$/;"	v
+obj	tests/MessageUnitTest.php	/^        $obj = (new Attachment())$/;"	v
+obj1	tests/MessageUnitTest.php	/^        $obj1 = (new Attachment())$/;"	v
+obj2	tests/MessageUnitTest.php	/^        $obj2 = (new Attachment())$/;"	v
+okText	src/ActionConfirmation.php	/^        $this->okText = $okText;$/;"	v
+okText	src/ActionConfirmation.php	/^    private $okText;$/;"	v
+options	src/Client.php	/^        $this->options = $resolver->resolve($options);$/;"	v
+options	src/Client.php	/^    private $options;$/;"	v
+out	tests/AttachmentUnitTest.php	/^        $out = [$/;"	v
+payload	src/Client.php	/^        $payload = $this->preparePayload($message);$/;"	v
+payload	src/Client.php	/^        $payload = [$/;"	v
+phrase	src/ErrorResponseHandler.php	/^        $phrase = $response->getReasonPhrase();$/;"	v
+preparePayload	src/Client.php	/^    private function preparePayload(MessageInterface $message): array$/;"	f
+pretext	src/Attachment.php	/^        $this->pretext = $pretext;$/;"	v
+pretext	src/Attachment.php	/^    private $pretext;$/;"	v
+remote1	tests/MessageUnitTest.php	/^        $remote1 = $attachments[0];$/;"	v
+remote2	tests/MessageUnitTest.php	/^        $remote2 = $attachments[1];$/;"	v
+remoteObj	tests/MessageUnitTest.php	/^        $remoteObj = $attachments[0];$/;"	v
+requestFactory	src/Client.php	/^        $this->requestFactory = $requestFactory;$/;"	v
+requestFactory	src/Client.php	/^    private $requestFactory;$/;"	v
+resolver	src/Client.php	/^        $resolver = (new OptionsResolver())$/;"	v
+response	src/Client.php	/^        $response = $this->httpClient->sendRequest($/;"	v
+responseMock	tests/ErrorResponseHandlerUnitTest.php	/^        $responseMock = $this->getResponseMock(200, 'OK', '');$/;"	v
+responseMock	tests/ErrorResponseHandlerUnitTest.php	/^        $responseMock = $this->getResponseMock(400, 'Bad Request', 'invalid_payload');$/;"	v
+responseMock	tests/ErrorResponseHandlerUnitTest.php	/^        $responseMock = $this->getResponseMock(400, 'Bad Request', 'user_not_found');$/;"	v
+responseMock	tests/ErrorResponseHandlerUnitTest.php	/^        $responseMock = $this->getResponseMock(403, 'Forbidden', 'action_prohibited');$/;"	v
+responseMock	tests/ErrorResponseHandlerUnitTest.php	/^        $responseMock = $this->getResponseMock(404, 'Not Found', 'channel_not_found');$/;"	v
+responseMock	tests/ErrorResponseHandlerUnitTest.php	/^        $responseMock = $this->getResponseMock(410, 'Gone', 'channel_is_archived');$/;"	v
+responseMock	tests/ErrorResponseHandlerUnitTest.php	/^        $responseMock = $this->getResponseMock(500, 'Server Error', 'rollup_error');$/;"	v
+responseMock	tests/ErrorResponseHandlerUnitTest.php	/^        $responseMock = Mockery::mock(ResponseInterface::class);$/;"	v
+send	src/Message.php	/^    public function send(?string $text = null): MessageInterface$/;"	f
+send	src/MessageInterface.php	/^    public function send(?string $text = null): self;$/;"	f
+sendMessage	src/Client.php	/^    public function sendMessage(MessageInterface $message): void$/;"	f
+sendMessage	src/ClientInterface.php	/^    public function sendMessage(MessageInterface $message): void;$/;"	f
+setActions	src/Attachment.php	/^    public function setActions($actions): self$/;"	f
+setAllowMarkdown	src/Message.php	/^    public function setAllowMarkdown(bool $value): MessageInterface$/;"	f
+setAllowMarkdown	src/MessageInterface.php	/^    public function setAllowMarkdown(bool $value): self;$/;"	f
+setAttachments	src/Message.php	/^    public function setAttachments(array $attachments): MessageInterface$/;"	f
+setAttachments	src/MessageInterface.php	/^    public function setAttachments(array $attachments): self;$/;"	f
+setAuthorIcon	src/Attachment.php	/^    public function setAuthorIcon(?string $authorIcon): self$/;"	f
+setAuthorLink	src/Attachment.php	/^    public function setAuthorLink(?string $authorLink): self$/;"	f
+setAuthorName	src/Attachment.php	/^    public function setAuthorName(?string $authorName): self$/;"	f
+setChannel	src/Message.php	/^    public function setChannel(?string $channel): MessageInterface$/;"	f
+setChannel	src/MessageInterface.php	/^    public function setChannel(?string $channel): self;$/;"	f
+setColor	src/Attachment.php	/^    public function setColor(?string $color): self$/;"	f
+setConfirm	src/AttachmentAction.php	/^    public function setConfirm(?ActionConfirmation $confirm): self$/;"	f
+setDismissText	src/ActionConfirmation.php	/^    public function setDismissText(?string $dismissText): self$/;"	f
+setFallback	src/Attachment.php	/^    public function setFallback(string $fallback): self$/;"	f
+setFields	src/Attachment.php	/^    public function setFields(array $fields): self$/;"	f
+setFooter	src/Attachment.php	/^    public function setFooter(?string $footer): self$/;"	f
+setFooterIcon	src/Attachment.php	/^    public function setFooterIcon(?string $footerIcon): self$/;"	f
+setIcon	src/Message.php	/^    public function setIcon(?string $icon): MessageInterface$/;"	f
+setIcon	src/MessageInterface.php	/^    public function setIcon(?string $icon): self;$/;"	f
+setImageUrl	src/Attachment.php	/^    public function setImageUrl(?string $imageUrl): self$/;"	f
+setMarkdownFields	src/Attachment.php	/^    public function setMarkdownFields(array $fields): self$/;"	f
+setMarkdownInAttachments	src/Message.php	/^    public function setMarkdownInAttachments(array $fields): MessageInterface$/;"	f
+setMarkdownInAttachments	src/MessageInterface.php	/^    public function setMarkdownInAttachments(array $fields): self;$/;"	f
+setOkText	src/ActionConfirmation.php	/^    public function setOkText(?string $okText): self$/;"	f
+setPretext	src/Attachment.php	/^    public function setPretext(?string $pretext): self$/;"	f
+setStyle	src/AttachmentAction.php	/^    public function setStyle(string $style): self$/;"	f
+setText	src/Attachment.php	/^    public function setText(string $text): self$/;"	f
+setText	src/Message.php	/^    public function setText(?string $text): MessageInterface$/;"	f
+setText	src/MessageInterface.php	/^    public function setText(?string $text): self;$/;"	f
+setThumbUrl	src/Attachment.php	/^    public function setThumbUrl(?string $thumbUrl): self$/;"	f
+setTimestamp	src/Attachment.php	/^    public function setTimestamp(?\\DateTime $timestamp): self$/;"	f
+setTitle	src/Attachment.php	/^    public function setTitle(?string $title): self$/;"	f
+setTitleLink	src/Attachment.php	/^    public function setTitleLink(?string $titleLink): self$/;"	f
+setType	src/AttachmentAction.php	/^    public function setType(string $type): self$/;"	f
+setUp	tests/ClientFunctionalTest.php	/^    protected function setUp(): void$/;"	f
+setUrl	src/AttachmentAction.php	/^    public function setUrl(?string $url): self$/;"	f
+setUsername	src/Message.php	/^    public function setUsername(?string $username): MessageInterface$/;"	f
+setUsername	src/MessageInterface.php	/^    public function setUsername(?string $username): self;$/;"	f
+setValue	src/AttachmentAction.php	/^    public function setValue(?string $value): self$/;"	f
+short	src/AttachmentField.php	/^        $this->short = $short;$/;"	v
+short	src/AttachmentField.php	/^    private $short;$/;"	v
+streamFactory	src/Client.php	/^        $this->streamFactory = $streamFactory;$/;"	v
+streamFactory	src/Client.php	/^    private $streamFactory;$/;"	v
+streamMock	tests/ErrorResponseHandlerUnitTest.php	/^        $streamMock = Mockery::mock(StreamInterface::class);$/;"	v
+style	src/AttachmentAction.php	/^        $this->style = $style;$/;"	v
+style	src/AttachmentAction.php	/^    private $style = self::STYLE_DEFAULT;$/;"	v
+testAddActionAsObject	tests/AttachmentUnitTest.php	/^    public function testAddActionAsObject(): void$/;"	f
+testAddFieldAsObject	tests/AttachmentUnitTest.php	/^    public function testAddFieldAsObject(): void$/;"	f
+testAttachWithObject	tests/MessageUnitTest.php	/^    public function testAttachWithObject(): void$/;"	f
+testAttachmentCreationFromArray	tests/AttachmentUnitTest.php	/^    public function testAttachmentCreationFromArray(): void$/;"	f
+testAttachmentCreationFromArrayWithFields	tests/AttachmentUnitTest.php	/^    public function testAttachmentCreationFromArrayWithFields(): void$/;"	f
+testAttachmentToArray	tests/AttachmentUnitTest.php	/^    public function testAttachmentToArray(): void$/;"	f
+testCreateMessage	tests/ClientUnitTest.php	/^    public function testCreateMessage(): void$/;"	f
+testDoesNotThrowWithGoodResponse	tests/ErrorResponseHandlerUnitTest.php	/^    public function testDoesNotThrowWithGoodResponse(ErrorResponseHandler $handler): void$/;"	f
+testInstantiation	tests/ErrorResponseHandlerUnitTest.php	/^    public function testInstantiation(): ErrorResponseHandler$/;"	f
+testInstantiation	tests/MessageUnitTest.php	/^    public function testInstantiation(): void$/;"	f
+testInstantiationWithDefaults	tests/ClientUnitTest.php	/^    public function testInstantiationWithDefaults(): void$/;"	f
+testInstantiationWithNoDefaults	tests/ClientUnitTest.php	/^    public function testInstantiationWithNoDefaults(): void$/;"	f
+testMessageWithAttachments	tests/ClientFunctionalTest.php	/^    public function testMessageWithAttachments(): void$/;"	f
+testMessageWithAttachmentsAndActions	tests/ClientFunctionalTest.php	/^    public function testMessageWithAttachmentsAndActions(): void$/;"	f
+testMessageWithAttachmentsAndFields	tests/ClientFunctionalTest.php	/^    public function testMessageWithAttachmentsAndFields(): void$/;"	f
+testMultipleAttachments	tests/MessageUnitTest.php	/^    public function testMultipleAttachments(): void$/;"	f
+testPlainMessage	tests/ClientFunctionalTest.php	/^    public function testPlainMessage(): void$/;"	f
+testSetAttachmentsWipesExistingAttachments	tests/MessageUnitTest.php	/^    public function testSetAttachmentsWipesExistingAttachments(): void$/;"	f
+testSetChannelWithSetter	tests/MessageUnitTest.php	/^    public function testSetChannelWithSetter(): void$/;"	f
+testSetChannelWithTo	tests/MessageUnitTest.php	/^    public function testSetChannelWithTo(): void$/;"	f
+testSetFields	tests/AttachmentUnitTest.php	/^    public function testSetFields(): void$/;"	f
+testSetIconToEmoji	tests/MessageUnitTest.php	/^    public function testSetIconToEmoji(): void$/;"	f
+testSetIconToUrl	tests/MessageUnitTest.php	/^    public function testSetIconToUrl(): void$/;"	f
+testSetText	tests/MessageUnitTest.php	/^    public function testSetText(): void$/;"	f
+testSetUsernameWithFrom	tests/MessageUnitTest.php	/^    public function testSetUsernameWithFrom(): void$/;"	f
+testSetUsernameWithSetter	tests/MessageUnitTest.php	/^    public function testSetUsernameWithSetter(): void$/;"	f
+testStickyChannel	tests/ClientFunctionalTest.php	/^    public function testStickyChannel(): void$/;"	f
+testThrowsActionProhibitedException	tests/ErrorResponseHandlerUnitTest.php	/^    public function testThrowsActionProhibitedException(ErrorResponseHandler $handler): void$/;"	f
+testThrowsChannelIsArchivedException	tests/ErrorResponseHandlerUnitTest.php	/^    public function testThrowsChannelIsArchivedException(ErrorResponseHandler $handler): void$/;"	f
+testThrowsChannelNotFoundException	tests/ErrorResponseHandlerUnitTest.php	/^    public function testThrowsChannelNotFoundException(ErrorResponseHandler $handler): void$/;"	f
+testThrowsInvalidPayloadException	tests/ErrorResponseHandlerUnitTest.php	/^    public function testThrowsInvalidPayloadException(ErrorResponseHandler $handler): void$/;"	f
+testThrowsRollupErrorException	tests/ErrorResponseHandlerUnitTest.php	/^    public function testThrowsRollupErrorException(ErrorResponseHandler $handler): void$/;"	f
+testThrowsUserNotFoundException	tests/ErrorResponseHandlerUnitTest.php	/^    public function testThrowsUserNotFoundException(ErrorResponseHandler $handler): void$/;"	f
+testWildcardCallToMessage	tests/ClientUnitTest.php	/^    public function testWildcardCallToMessage(): void$/;"	f
+text	src/ActionConfirmation.php	/^        $this->text = $text;$/;"	v
+text	src/ActionConfirmation.php	/^    private $text;$/;"	v
+text	src/Attachment.php	/^        $this->text = $text;$/;"	v
+text	src/Attachment.php	/^    private $text = ' ';$/;"	v
+text	src/AttachmentAction.php	/^        $this->text = $text;$/;"	v
+text	src/AttachmentAction.php	/^    private $text;$/;"	v
+text	src/Message.php	/^        $this->text = $text;$/;"	v
+text	src/Message.php	/^    private $text;$/;"	v
+thumbUrl	src/Attachment.php	/^        $this->thumbUrl = $thumbUrl;$/;"	v
+thumbUrl	src/Attachment.php	/^    private $thumbUrl;$/;"	v
+timestamp	src/Attachment.php	/^        $this->timestamp = $timestamp;$/;"	v
+timestamp	src/Attachment.php	/^    private $timestamp;$/;"	v
+title	src/ActionConfirmation.php	/^        $this->title = $title;$/;"	v
+title	src/ActionConfirmation.php	/^    private $title;$/;"	v
+title	src/Attachment.php	/^        $this->title = $title;$/;"	v
+title	src/Attachment.php	/^    private $title;$/;"	v
+title	src/AttachmentField.php	/^        $this->title = $title;$/;"	v
+title	src/AttachmentField.php	/^    private $title;$/;"	v
+titleLink	src/Attachment.php	/^        $this->titleLink = $titleLink;$/;"	v
+titleLink	src/Attachment.php	/^    private $titleLink;$/;"	v
+to	src/Message.php	/^    public function to(string $channel): MessageInterface$/;"	f
+to	src/MessageInterface.php	/^    public function to(string $channel): self;$/;"	f
+toArray	src/ActionConfirmation.php	/^    public function toArray(): array$/;"	f
+toArray	src/Attachment.php	/^    public function toArray(): array$/;"	f
+toArray	src/AttachmentAction.php	/^    public function toArray(): array$/;"	f
+toArray	src/AttachmentField.php	/^    public function toArray(): array$/;"	f
+type	src/AttachmentAction.php	/^        $this->type = $type;$/;"	v
+type	src/AttachmentAction.php	/^    private $type = self::TYPE_BUTTON;$/;"	v
+url	src/AttachmentAction.php	/^        $this->url = $url;$/;"	v
+url	src/AttachmentAction.php	/^    private $url;$/;"	v
+username	src/Message.php	/^        $this->username = $username;$/;"	v
+username	src/Message.php	/^    private $username;$/;"	v
+value	src/AttachmentAction.php	/^        $this->value = $value;$/;"	v
+value	src/AttachmentAction.php	/^    private $value;$/;"	v
+value	src/AttachmentField.php	/^        $this->value = $value;$/;"	v
+value	src/AttachmentField.php	/^    private $value;$/;"	v
+withIcon	src/Message.php	/^    public function withIcon(string $icon): MessageInterface$/;"	f
+withIcon	src/MessageInterface.php	/^    public function withIcon(string $icon): self;$/;"	f
